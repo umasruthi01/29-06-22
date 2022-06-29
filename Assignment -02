@@ -1,0 +1,32 @@
+n=int(input())
+d={}
+for i in range(n):
+   l=input().split(' ')
+   k=l[0]
+   v=l[1]
+   d[k]=v
+for i in range(n):
+   try:
+      c=input() 
+      if c in d:
+         print(c+'='+d[c]) 
+      else:
+         print("no") 
+   except:
+      print()
+
+      output:
+1. 2
+   Rajesh pass
+   Ramesh fail
+   Rajesh
+    Rajesh=pass
+    Dinesh
+    pass
+2. 2
+   Rajesh pass
+   Ramesh fail
+   Rajesh
+   Rajesh=pass
+   Dinesh
+   no
